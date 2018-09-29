@@ -69,6 +69,11 @@ class RandomGeneratorTest (unittest.TestCase):
             find_target(-1,0,10,10)
         self.assertLess(find_target(2,1,2,1000),1000)   #tests a 99.9% likely answer
         self.assertEqual(find_target(1,1,1000,0),None)  #tests if no numbers are found in the range
+        
+ class My_enmurateTest (unittest.TestCase):
+    """ test my_enumerate function"""
+    def test_Myenumerate(self):
+        self.assertEqual(list(my_enumerate("abc")),[(0, 'a'),(1, 'b'),(2,'c')])
 
 
     unittest.main(exit=False, verbosity=2)
