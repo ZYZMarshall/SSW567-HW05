@@ -1,12 +1,12 @@
 def plurals(string):
     wordlist = string.split()       # get all the word(s) from the string
-     vowelslist = ('ay', 'ey', 'iy', 'oy', 'uy')
+    vowelslist = ('ay', 'ey', 'iy', 'oy', 'uy')
     endswithYlist = ('y')
-     endswithElselist = ('o', 'ch', 's', 'sh', 'x', 'z')
+    endswithElselist = ('o', 'ch', 's', 'sh', 'x', 'z')
     pluralstring = ''                # store the response in a string
     for words in wordlist:
 
-         if words.endswith(vowelslist):             #use endwith() to check if words are end in vowelist
+        if words.endswith(vowelslist):             #use endwith() to check if words are end in vowelist
 
             pluralstring += words + 's' + ' '
 
@@ -14,7 +14,7 @@ def plurals(string):
 
             pluralstring += words[:-1] + 'ies' + ' '
 
-        e lif words.endswith(endswithElselist):   #end in endwithElselist
+        elif words.endswith(endswithElselist):   #end in endwithElselist
 
             pluralstring += words + 'es' + ' '
 
